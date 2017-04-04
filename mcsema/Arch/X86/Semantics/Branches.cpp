@@ -334,7 +334,7 @@ static llvm::CallInst *emitInternalCall(llvm::BasicBlock *&b, llvm::Module *M,
 
   // figure out who we are calling
   auto targetF = M->getFunction(target_fn);
-
+  std::cerr << " ret_addr: " << ret_addr << std::endl;
   TASSERT(targetF != nullptr, "Could not find target function: " + target_fn);
 
   // do we need to push a ret addr?

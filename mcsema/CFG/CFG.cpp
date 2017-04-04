@@ -1154,6 +1154,7 @@ NativeModulePtr ReadProtoBuf(const std::string &file_name) {
     std::cerr << "Failed to deserialize protobuf module" << std::endl;
     return m;
   }
+  proto.PrintDebugString();
 
   std::unordered_map<VA, NativeFunctionPtr> native_funcs;
   std::list<ExternalCodeRefPtr> extern_funcs;
