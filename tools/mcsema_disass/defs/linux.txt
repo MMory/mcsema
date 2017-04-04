@@ -16,7 +16,7 @@ _ZSt25__throw_bad_function_callv 0 C N
 _1 5 C N
 _2 5 C N
 _3 5 C N
-__assert_fail 5 C N
+__assert_fail 4 C Y
 __cxa_atexit 5 C N
 __cxa_guard_acquire 5 C N
 __cxa_guard_release 5 C N
@@ -1538,9 +1538,7 @@ ass_alloc_event 1 C N
 ass_alloc_style 1 C N
 ass_clear_fonts 1 C N
 __assert 3 C N
-__assert_fail 4 C N
-__assert_fail 4 C Y
-__assert_perror_fail 4 C N
+__assert_perror_fail 4 C Y
 ass_flush_events 1 C N
 ass_fonts_update 1 C N
 ass_free_event 2 C N
@@ -8495,7 +8493,7 @@ fmodl 2 C N
 fmtcheck 2 C N
 fmtmsg 6 C N
 fnmatch 3 C N
-# Folowing could have 7 or 8 args, depending on if ELF auxvec is passed.
+# Following could have 7 or 8 args, depending on if ELF auxvec is passed.
 fopen 2 C N
 fopen64 2 C N
 fopencookie 3 C N
@@ -37250,3 +37248,39 @@ __vfprintf_chk 4 C N
 # used for netcat test
 __recvfrom_chk 7 C N
 __poll_chk 4 C N
+
+#ACL Definitions
+acl_get_tag_type 2 C N
+acl_init 1 C N
+acl_dup 1 C N
+acl_free 1 C N
+acl_valid 1 C N
+
+acl_copy_entry 2 C N
+acl_create_entry 2 C N
+acl_delete_entry 2 C N
+acl_get_entry 3 C N
+
+acl_add_perm 2 C N
+acl_calc_mask 1 C N
+acl_clear_perms 1 C N
+acl_delete_perm 2 C N
+acl_get_permset 2 C N
+acl_set_permset 2 C N
+
+acl_get_qualifier 1 C N
+acl_get_tag_type 2 C N
+acl_set_qualifier 2 C N
+acl_set_tag_type 2 C N
+
+acl_copy_ext 3 C N
+acl_copy_int 1 C N
+acl_from_text 1 C N
+acl_size 1 C N
+acl_to_text 2 C N
+
+acl_delete_def_file 1 C N
+acl_get_fd 1 C N
+acl_get_file 2 C N
+acl_set_fd 2 C N
+acl_set_file 3 C N
